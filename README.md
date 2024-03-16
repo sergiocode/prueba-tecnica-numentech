@@ -9,21 +9,25 @@ En la carpeta de frontend está el proyecto de React y en backend el servidor de
 
 ## Base de datos
 
-Tanto en la carpeta de frontend como backend encontrarás un archivo llamado database.sql. Ábrelo para ejecutar el script. Este creará la base de datos, las tablas y los inserts.
+Tanto en la carpeta de frontend como backend encontrarás un archivo llamado database.sql. Ábrelo y ejecuta el script. Este creará la base de datos, las tablas y los inserts.
 
 ## Backend
-Esta carpeta contiene un archivo .env con los datos de prueba y las credenciales para acceder a la base de datos. Modifica si es necesario DB_USER Y DB_PASSWORD para que el servidor pueda acceder.
+Esta carpeta contiene un archivo .env con los datos de prueba y las credenciales para acceder a la base de datos. Modifica DB_USER Y DB_PASSWORD para que el servidor pueda acceder.
 
 Para levantar el servidor nos ubicamos en la carpeta ejecutamos:
 
-    gunicorn -w 4 server:app
+    source venv/bin/activate
+    python3 server.py
+
+Comprobamos el puerto que usa para despues cambiarlo si es necesario en el .env de frontend
 
 ## Frontend
 
-Esta carpeta contiene un archivo .env con las URL base para conectarnos al servidor. Este archivo es necesario para el funcionamiento de la aplicación
+Esta carpeta contiene un archivo .env con las URL base para conectarnos al servidor. Modificamos el puerto de API_URL si es necesario.
 
 Para levantar el frontend nos ubicamos en la carpeta y ejecutamos:
 
+    npm i
+    npm run build
     npm run start
 
-Si da algun fallo deberemos ejecutar primero ``npm run build`` y después ``npm run start``
