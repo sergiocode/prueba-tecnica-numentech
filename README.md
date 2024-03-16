@@ -16,7 +16,7 @@ Esta carpeta contiene un archivo .env con los datos de prueba y las credenciales
 
 Para levantar el servidor nos ubicamos en la carpeta ejecutamos:
 
-    ``gunicorn -w 4 server:app``
+    gunicorn -w 4 server:app
 
 ## Frontend
 
