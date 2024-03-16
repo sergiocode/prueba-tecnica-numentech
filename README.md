@@ -24,6 +24,6 @@ Esta carpeta contiene un archivo .env con las URL base para conectarnos al servi
 
 Para levantar el frontend nos ubicamos en la carpeta y ejecutamos:
 
-    ``npm run start``
+    npm run start
 
 Si da algun fallo deberemos ejecutar primero ``npm run build`` y después ``npm run start``
