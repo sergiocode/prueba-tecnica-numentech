@@ -2,8 +2,8 @@ from flask import Flask, jsonify, request
 import os
 import pymysql
 from pymysql.cursors import DictCursor
-from utils.bcrypt import checkBcrypt
-from utils.create_jwt import createJWT
+from lib.bcrypt import checkBcrypt
+from lib.create_jwt import createJWT
 import jwt
 
 from functools import wraps
@@ -266,4 +266,4 @@ def createTask():
 
 
 if __name__ == "__main__" :
-    app.run()
+    app.run(debug=True)
